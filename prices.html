@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii Auto - Montare, Demontare, Reparare Cauciucuri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Negru */
+            color: #e0e0e0; /* Gri deschis */
+        }
+
+        h1, h2, h3 {
+            color: #b71c1c; /* Roșu intens */
+        }
+
+        /* Header */
+        header {
+            background-color: #1f1f1f;
+            color: #b71c1c;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #7b1fa2; /* Mov */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Section Servicii */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 0;
+            background-color: #181818;
+        }
+
+        .service {
+            background-color: #242424;
+            border-radius: 10px;
+            margin: 10px;
+            width: 280px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .service h3 {
+            color: #7b1fa2;
+        }
+
+        .service p {
+            font-size: 1em;
+            color: #b0b0b0;
+        }
+
+        .service .price {
+            font-size: 1.5em;
+            color: #b71c1c;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .service .icon {
+            font-size: 3em;
+            color: #7b1fa2;
+            margin-bottom: 10px;
+        }
+
+        /* Program Section */
+        .schedule {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 3px solid #b71c1c;
+        }
+
+        .schedule h2 {
+            margin-bottom: 20px;
+        }
+
+        .schedule ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        .schedule ul li {
+            margin: 5px 0;
+            color: #b0b0b0;
+        }
+
+        .schedule ul li strong {
+            color: #e0e0e0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #242424;
+            color: #7b1fa2;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact h2 {
+            margin: 0;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #b71c1c;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Servicii Auto</h1>
+        <p>Montare, Demontare, Reparare Cauciucuri și multe altele</p>
+    </header>
+
+    <section class="services">
+        <div class="service">
+            <i class="fas fa-tools icon"></i>
+            <h3>Montare Cauciucuri</h3>
+            <p>Rapid și eficient pentru toate vehiculele.</p>
+            <p class="price">120 RON</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-tire icon"></i>
+            <h3>Demontare Cauciucuri</h3>
+            <p>Înlocuire cauciucuri vechi fără bătăi de cap.</p>
+            <p class="price">100 RON</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-wrench icon"></i>
+            <h3>Reparare Cauciucuri</h3>
+            <p>Remediem defectele rapid și sigur.</p>
+            <p class="price">80 RON</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-check-circle icon"></i>
+            <h3>Verificare Presiune</h3>
+            <p>Asigurăm presiunea optimă pentru siguranța ta.</p>
+            <p class="price">30 RON</p>
+        </div>
+    </section>
+
+    <section class="schedule">
+        <h2>Program de lucru</h2>
+        <ul>
+            <li><strong>Marți:</strong> 08:00 - 18:00</li>
+            <li><strong>Miercuri:</strong> 08:00 - 18:00</li>
+            <li><strong>Joi:</strong> 08:00 - 18:00</li>
+            <li><strong>Vineri:</strong> 08:00 - 18:00</li>
+            <li><strong>Sâmbătă:</strong> 09:00 - 14:00</li>
+            <li><strong>Duminică:</strong> Închis</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contactează-ne</h2>
+        <p>Sună la 0722 123 456 sau scrie la contact@serviciiauto.ro</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Servicii Auto | <a href="#">Politica de confidențialitate</a> | <a href="#">Termeni și condiții</a></p>
+    </footer>
+</body>
+</html>
